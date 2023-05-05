@@ -433,3 +433,4 @@ IList<string> roles = await _userManager.GetRolesAsync(user);
 var token = _jwtService.CreateToken(user,roles);
 ```
 
+## Make another migration step
