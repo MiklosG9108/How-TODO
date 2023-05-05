@@ -342,7 +342,12 @@ internal static class ClaimsPrincipalExtensions
 ### Don't forget to start your Container!
 
 # Roles
-## Add to ITokenCreationService.cs
+## Modify the parameter of ITokenCreationService.cs' CreateToken method
+```cs
+public AuthenticationResponse CreateToken(IdentityUser user, IList<string> roles)
+```
+
+## Modify the method of JWTService's CreateToken
 ```cs
 public AuthenticationResponse CreateToken(IdentityUser user, IList<string> roles)
     {
