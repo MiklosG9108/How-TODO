@@ -24,8 +24,9 @@
 
 ## Make Models/***DbContext.cs
 - Name your DbContext instead of ***
+**watch out for the interface changes!**
 ```cs
-public class ***DbContext : IdentityUserContext<ApplicationUser>
+public class ***DbContext : IdentityDbContext<ApplicationUser> **watch out for the interface changes!
 {
     public ***DbContext(DbContextOptions<***DbContext> options) : base(options)
     {
